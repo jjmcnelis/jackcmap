@@ -1,0 +1,10 @@
+version: '3'
+services:
+  bokeh: 
+    build:
+      context: .
+      dockerfile: bokeh.Dockerfile
+    volumes:
+      - ./app/:/app
+    ports:
+      - '5006:5006'
